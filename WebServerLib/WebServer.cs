@@ -122,7 +122,6 @@ namespace WebServerLib
             clientSocket.Send(header);
             clientSocket.Send(Encoding.UTF8.GetBytes(content));
             clientSocket.Close();
-
             ServerInfo?.Invoke("Server responded to client client successfully");
         }
     }
