@@ -7,7 +7,6 @@ namespace WebServerLib
     public class WebServer
     {
         public event ServerInfoEvent? ServerInfo;
-
         private readonly Socket serverSocket;
         private readonly Thread webServerThread;
         private readonly ManualResetEvent allDone;
